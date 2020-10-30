@@ -1,0 +1,19 @@
+version: "3"
+services:
+  rest:
+    build: .
+    container_name: rest-api
+    tty: true
+    ports:
+      - 3000:3000
+    volumes:
+        - ./src:/src
+        - rest_node_modules:/src/node_modules
+    working_dir: /src
+    env_file: ./app.env
+    command: npm install
+    tty: true
+    command: npm start
+volumes:
+  rest_node_modules:
+    driver: local
