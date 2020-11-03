@@ -16,7 +16,7 @@ const searchModule = (() => {
                   <td>${user.id}</td>
                   <td>${user.name}</td>
                   <td>${user.profile}</td>
-                  <td>${user.data_of_brith}</td>
+                  <td>${user.date_of_birth}</td>
                   <td>${user.created_at}</td>
                   <td>${user.updated_at}</td>
               </tr>`
