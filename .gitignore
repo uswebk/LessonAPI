@@ -1,2 +1,2 @@
 *.log*
-app/db/*
+*.sqllite3
