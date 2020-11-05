@@ -95,11 +95,11 @@ app.delete('/api/v1/users/:id', async (req, res) => {
   const db = new sqlite3.Database(dbPath)
   const id = req.params.id
 
-    await run(`DELETE FROM users WHERE id=${id}`,
-              db,
-              res,
-              "Delete Success!"
-    )
+  await run(`DELETE FROM users WHERE id=${id}`,
+            db,
+            res,
+            "Delete Success!"
+  )
 
   db.close()
 })
