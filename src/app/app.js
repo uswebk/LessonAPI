@@ -4,7 +4,7 @@ const sqlite3 = require('sqlite3')
 const path = require('path')
 const bodyParser = require('body-parser')
 
-const dbPath = "app/db/database.sqlite3"
+const dbPath = "/db/test.sqlite3"
 
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
